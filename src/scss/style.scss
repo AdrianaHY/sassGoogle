@@ -32,13 +32,28 @@
   .col-#{$numColumn}{
     width:widthColumns($numColumn)
   }
+@for $numColumn from 1 through 12{
+  .col-#{$numColumn}-offset{
+    margin-left:widthColumns($numColumn)
+  }
+}
 }
 
 /*comienzan los estilos*/
 header{
   text-align: $center;
+  & .logo{
+    width:30%;
+  }
+  & .search{
+    float:right;
+  }
   & .menu{
     list-style: $none;
+  }
+  & nav li{
+    display: inline;
+    padding-right: 5%;
   }
   & a{
     text-decoration: $none;
