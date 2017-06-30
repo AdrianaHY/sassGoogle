@@ -1,0 +1,20 @@
+@mixin title {
+  font: {
+    family: $font-title;
+    size: $font-size-title;
+    weight: $font-weight-title;
+  }
+  line-height: $line-height-title;
+  color: darken($gray-titles,50%);
+}
+@mixin date {
+  font-family: $font-date;
+  color: lighten($gray-date, 20%);
+}
+@mixin paragraph {
+  font: {
+    family: $font-paragraph;
+    size: $font-size-paragraph;
+  }
+  color: lighten($gray-text, 20%);
+}
