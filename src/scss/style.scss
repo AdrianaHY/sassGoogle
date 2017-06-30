@@ -1,9 +1,14 @@
 @import "variables";
+@import "mixin";
 /*para la grid*/
 *{
   box-sizing: border-box;
   margin:0;
   padding:0;
+}
+a{
+  text-decoration: $none;
+
 }
 .container{
   width: 100%;
@@ -40,10 +45,33 @@
 }
 
 /*comienzan los estilos*/
+/*Estilos generales*/
+.border{
+  border-top: $blue-border;
+}
+.titles{
+  font-family: $font-title;
+}
+.etiquetas{
+  @include date;
+}
+.paragraph{
+  @include paragraph;
+}
+.asana{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   display: inline-block;
+   margin-right: 8px;
+}
+/*header*/
 header{
+  font-family: $font-title;
   text-align: $center;
+  margin: 9vh;
   & .logo{
-    width:30%;
+    width:20%;
   }
   & .search{
     float:right;
@@ -54,8 +82,40 @@ header{
   & nav li{
     display: inline;
     padding-right: 5%;
+    font-size: 2vh;
   }
   & a{
     text-decoration: $none;
+
+  }
+}
+/*sectionOne*/
+#sectionOne{
+  h1{
+    @include title;
+  }
+  h3{
+    @extend h1;
+  }
+}
+/*news*/
+#news{
+  h2{
+    @include title;
+  }
+}
+
+#galleryOne{
+  div h3{
+    @include title;
+  }
+
+}
+footer{
+  h4{
+    @include title;
+  }
+  p{
+    @include paragraph;
   }
 }

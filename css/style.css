@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none; }
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -489,18 +492,79 @@
   margin-left: 100%; }
 
 /*comienzan los estilos*/
+/*Estilos generales*/
+.border {
+  border-top: 4px solid #4285f4; }
+
+.titles {
+  font-family: "Roboto", sans-serif; }
+
+.etiquetas {
+  font-family: "Roboto Mono", monospace;
+  color: #92969b; }
+
+.paragraph {
+  font-family: "Product Sans", Arial, sans-serif;
+  font-size: 1rem;
+  color: #71787f; }
+
+.asana {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px; }
+
+/*header*/
 header {
-  text-align: center; }
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 9vh; }
   header .logo {
-    width: 30%; }
+    width: 20%; }
   header .search {
     float: right; }
   header .menu {
     list-style: none; }
   header nav li {
     display: inline;
-    padding-right: 5%; }
+    padding-right: 5%;
+    font-size: 2vh; }
   header a {
     text-decoration: none; }
+
+/*sectionOne*/
+#sectionOne h1, #sectionOne h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 32px;
+  color: black; }
+
+/*news*/
+#news h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 32px;
+  color: black; }
+
+#galleryOne div h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 32px;
+  color: black; }
+
+footer h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 32px;
+  color: black; }
+footer p {
+  font-family: "Product Sans", Arial, sans-serif;
+  font-size: 1rem;
+  color: #71787f; }
 
 /*# sourceMappingURL=style.css.map */
